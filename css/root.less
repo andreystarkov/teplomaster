@@ -8,7 +8,7 @@
     @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic);
     @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic);
 
-    @color-blue-menu: rgba(44,134,180,0.6);
+    @color-blue-menu: rgba(44,134,180,0.5);
     @color-blue-block: rgba(126,182,211,0.8);
     @color-blue-2: rgba(0,113,170,0.8);
 
@@ -32,17 +32,26 @@
 
         background: @color-blue-menu;
         height: 45px;
+
+        .basket:hover {
+            background: url(../images/basket-big.png) 10px center no-repeat, rgba(255,255,255,0.3);
+            box-shadow: -1px 0 3px rgba(0,0,0,0.1)
+        }
+
         .basket {
+            font-family: 'PT Sans';
             padding-top: 4px;
             position: absolute;
             right: 0;
             top: 0;
-            width: 160px;
+            cursor: pointer;
+            width: 170px;
             height: 100%;
-            padding-left: 35px;
-            background: url(../images/basket-big.png) left center no-repeat;
-            b { display: block; font-weight: 600; font-size: 13px; }
-            i { font-style: normal; font-size: 12px; }
+            transition: 0.3s ease-in all;
+            padding-left: 45px;
+            background: url(../images/basket-big.png) 10px center no-repeat;
+            b { display: block; font-weight: 600; font-size: 14px; }
+            i { font-style: normal; font-size: 14px; }
 
             img { position: absolute; right:0; top: 0;
                 height: 48px; }

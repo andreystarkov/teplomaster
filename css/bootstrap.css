@@ -6093,7 +6093,7 @@ body.modal-open,
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   z-index: 5;
   display: inline-block;
@@ -6136,7 +6136,11 @@ body.modal-open,
   text-indent: -999px;
   cursor: pointer;
    background-color: rgba(0,0,0,0.2);
+   transition: 0.4s ease-in-out all;
   border-radius: 20px;
+}
+.carousel-indicators li:hover {
+  background-color: rgba(0,0,0,0.3);
 }
 
 .carousel-indicators .active {
