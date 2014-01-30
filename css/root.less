@@ -1,0 +1,298 @@
+
+    /*
+        LESS/CSS for Teplomaster
+        compile to css: http://less2css.org/
+        im@andreystarkov.ru
+    */
+
+    @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic);
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic);
+
+    @color-blue-menu: rgba(44,134,180,0.6);
+    @color-blue-block: rgba(126,182,211,0.8);
+    @color-blue-2: rgba(0,113,170,0.8);
+
+    @color-green-block: rgba(138,189,14,0.8);
+    @color-orange-block: rgba(230,120,23,0.8);
+
+    body {
+        font-family: 'Open Sans';
+        background: url(../images/bg.jpg) top center no-repeat;
+        padding-bottom: 100px;
+        a {
+            transition: 0.4s ease-in all;
+        }
+    }
+
+    #middle-block {
+         margin-top: 50px;
+    }
+
+    .top-menu {
+
+        background: @color-blue-menu;
+        height: 45px;
+        .basket {
+            padding-top: 4px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 160px;
+            height: 100%;
+            padding-left: 35px;
+            background: url(../images/basket-big.png) left center no-repeat;
+            b { display: block; font-weight: 600; font-size: 13px; }
+            i { font-style: normal; font-size: 12px; }
+
+            img { position: absolute; right:0; top: 0;
+                height: 48px; }
+        }
+        a {
+            color: #333;
+            font-size:14px;
+            font-weight: 600;
+        }
+
+        a:hover { background-color: rgba(255,255,255,0.3); }
+        a.active { background: #2484b4; }
+        .active>a { background-color: #2484b4; color: #fff; }
+
+    }
+
+    .news {
+
+        position: relative;
+
+        h3 {
+            display: block; position: absolute;
+            margin:0; top: -30px; left: 0px;
+            font-size: 18px; text-transform: uppercase;
+        }
+
+        .item {
+            margin-top: 10px;
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 110px;
+
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+
+            div {
+                position: absolute;
+                width: 430px;
+                height: 110px;
+                right: 20px;
+                top: 0;
+                background: #fff;
+                border: 1px solid #ccc;
+                display: block;
+                padding: 10px;
+
+                p {
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                i { font-style: normal;
+                    color: #b8b8b8;
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+    .navbar-inverse .navbar-nav > .active > a {
+      background-color: #2484b4;
+    }
+
+    .info-block {
+        margin-top: 10px;
+        padding: 20px;
+        height: 230px;
+        width: 100%;
+        background: @color-blue-2;
+        border-radius: 3px;
+        color: #fff;
+        position: relative;
+
+        .phone {
+            position: absolute; top: 65px; right: 15px; width: 55%; height: 70px;
+            padding-left: 80px; background: url(../images/phone.png) left center no-repeat;
+
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            i {
+                font-style: normal;
+                font-size: 32px;
+            }
+        }
+
+        b { font-weight: 600px; font-size: 18px; margin-bottom: 15px; display: block }
+        p { font-weight: 500px; font-size: 16px }
+
+        .links {
+            position: absolute; right: 20px; bottom: 20px; width: 70%;
+            text-align: right;
+        }
+
+        .links a { color: #fff; margin-left: 15px; }
+    }
+
+    .adv-block {
+        width: 550px;
+
+        .carousel-indicators {
+            bottom: 20px; right: 30px;
+        }
+    }
+
+    .good-block {
+        height: 360px;
+        width: 360px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+        b { text-align: left;
+            line-height: 1.2;
+            display: block;
+            font-size: 18px;
+            font-weight: 400; }
+
+        .glyphicon-chevron-left {
+            left: 30%;
+        }
+        .glyphicon-chevron-right {
+            right: 30%;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0; left: 0;
+            height: 120px;
+            width: 100%;
+            padding: 10px 15px;
+        }
+
+        .btn-go {
+            background: rgba(51,51,51,0.75);
+            display:block;
+            position: absolute;
+            font-size: 14px;
+            padding: 5px 14px;
+            right: 15px;
+            color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            bottom: 10px;
+        }
+
+        .btn-go:hover {
+           background: rgba(51,51,51,1);
+           text-decoration: none;
+        }
+
+        .total {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            padding-left: 30px;
+            background: url(../images/basket.png) left center no-repeat;
+            color: #000;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+    }
+
+    .footer {
+        height:345px;
+        width: 100%;
+        padding: 40px 60px;
+        background: #e5e5e5;
+        position: relative;
+         .phone {
+            position: absolute; top: 45px; right: 100px; height: 70px;
+
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            i {
+                font-style: normal;
+                font-size: 32px;
+            }
+        }
+
+        ul {
+            display: block;
+            float: left;
+            width: 25%;
+            list-style: none;
+
+            li:first-child {
+                margin-bottom: 10px;
+            }
+
+            li {
+                margin-bottom: 4px;
+                b {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                a {
+                    color: #333333;
+                    text-decoration: none;
+                    font-size: 13px;
+                }
+                a:hover {
+                text-decoration: underline
+                 }
+            }
+
+        }
+    }
+
+    #good-block-1 {
+        .carousel-caption {
+            background: @color-blue-block;
+        }
+    }
+
+    #good-block-2 {
+        .carousel-caption {
+            background: @color-green-block;
+        }
+    }
+
+    #good-block-3 {
+        .carousel-caption {
+            background: @color-orange-block;
+        }
+    }
+
+    .header {
+        width: 100%;
+        height: 140px;
+        position: relative;
+
+        .logo {
+            position: absolute;
+            top: 45px;
+            left: 45px;
+            height:48px;
+            width: 245px;
+            background: url(../images/logo.png);
+        }
+    }
