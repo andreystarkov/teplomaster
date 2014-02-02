@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+    <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Тепломастер</title>
+
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap1.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet/less" type="text/css" href="css/root.less" />
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/less.js"></script>
+
+        <script type="text/javascript" charset="utf-8">
+          less.env = "development";
+          less.watch();
+        </script>
+
+    </head>
+    <body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo"></div>
+        </div>
+
+        <div class="navbar top-menu">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li class="active"><a href="#">Новости</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Полезная информация</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Интернет магазин</a></li>
+
+                    <div class="basket navbar-right">
+                        <b>Корзина</b>
+                        <i>0 &#8399;</i>
+                        <img src="images/sample/ava.jpg">
+                    </div>
+
+                </ul>
+
+                </div><!--/.navbar-collapse -->
+
+        </div>
+
+    </div>
+
+    <style>
+      .box-icons .col-xs-2 {
+        text-align: center;
+      }
+      .accordion {
+   margin: 5px;
+   dt, dd {
+      padding: 10px;
+      border: 1px solid black;
+      border-bottom: 0;
+      &:last-of-type {
+        border-bottom: 1px solid black;
+      }
+      a {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 0;
+     font-size: 12px;
+     &:last-of-type {
+       border-top: 1px solid white;
+       position: relative;
+       top: -1px;
+     }
+  }
+}
+    </style>
+
+    <div class="container">
+
+        <div class="box-header">
+
+            <div class="row">
+                <div class="btn-catalog">Каталог товаров<i class="fa fa-angle-down"></i></div>
+                <div class="box-search"><span>Найти товар</span><input type="text" name="search">
+                <div class="btn-search"><i class="fa fa-search"></i> Искать</div></div>
+            </div>
+
+            <div class="popup-catalog">
+                    <ul class="nav nav-tabs" id="myTab">
+                      <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-circle"></i> Тепломастер</a></li>
+                      <li><a href="#profile" data-toggle="tab"><i class="fa fa-circle"></i> РобоДом</a></li>
+                      <li><a href="#messages" data-toggle="tab"><i class="fa fa-circle"></i> МеталлДизайн</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="home">
+
+                          <dl class="accordion">
+
+                              <dt><a href="">Фильтры для воды и отопления</a></dt>
+                              <dd>
+                                  <a href="#">Умягчители</a><br>
+                                  <a href="#">Фильтры для получения питьевой воды </a><br>
+                                  <a href="#">Картриджи</a><br>
+                                  <a href="#">Фильтры для воды и отопления</a>
+                              </dd>
+
+                              <dt><a href="">Краны шаровые, вентили, запорная арматура</a></dt>
+                              <dd>
+                                  <a href="#">Умягчители</a><br>
+                                  <a href="#">Фильтры для получения питьевой воды </a><br>
+                                  <a href="#">Картриджи</a><br>
+                                  <a href="#">Фильтры для воды и отопления</a>
+                              </dd>
+
+
+                              <dt><a href="">Стабилизаторы и источники бесперебойного питания</a></dt>
+                              <dd>
+                                  <a href="#">Умягчители</a><br>
+                                  <a href="#">Фильтры для получения питьевой воды </a><br>
+                                  <a href="#">Картриджи</a><br>
+                                  <a href="#">Фильтры для воды и отопления</a>
+                              </dd>
+                          </dl>
+
+                      </div>
+                      <div class="tab-pane" id="profile">...2</div>
+                      <div class="tab-pane" id="messages">..3.</div>
+                      <div class="tab-pane" id="settings">..4.</div>
+                    </div>
+
+                    <script>
+                      $(function () {
+                        $('#myTab a:last').tab('show')
+                      })
+                    </script>
+            </div>
+
+            <div class="row box-icons">
+
+                  <div class="col-xs-2">
+                    <a href="#">
+                      <img src="images/icons/1.png">
+                      <b>Покупка в кредит</b>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <a href="#">
+                      <img src="images/icons/2.png">
+                      <b>Доставка по регионам России</b>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <a href="#">
+                      <img src="images/icons/3.png">
+                      <b>Гарантийное обслуживание</b>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <a href="#">
+                      <img src="images/icons/4.png">
+                      <b>Установка и подключение техники</b>
+                    </a>
+                  </div>
+
+                  <div class="col-xs-2">
+                    <a href="#">
+                      <img src="images/icons/5.png">
+                      <b>Дисконтная программа</b>
+                    </a>
+                  </div>
+
+            </div>
+
+        </div> <!-- box-header -->
+
+    </div>
+
+    <div class="container catalog-grid">
+
+          <div class="item">
+              <img src="images/sample/item.png">
+              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+              <div class="retail">розница <b>1343</b> руб.</div>
+              <div class="online">интернет <b>1150</b> руб.</div>
+
+              <div class="spinner"></div><div class="btn-cart">В корзину</div>
+          </div>
+
+          <div class="item">
+              <img src="images/sample/item.png">
+              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+              <div class="retail">розница <b>1343</b> руб.</div>
+              <div class="online">интернет <b>1150</b> руб.</div>
+
+              <div class="spinner"></div><div class="btn-cart">В корзину</div>
+          </div>
+
+          <div class="item">
+              <img src="images/sample/item.png">
+              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+              <div class="retail">розница <b>1343</b> руб.</div>
+              <div class="online">интернет <b>1150</b> руб.</div>
+
+              <div class="spinner"></div><div class="btn-cart">В корзину</div>
+          </div>
+
+          <div class="item">
+              <img src="images/sample/item.png">
+              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+              <div class="retail">розница <b>1343</b> руб.</div>
+              <div class="online">интернет <b>1150</b> руб.</div>
+
+              <div class="spinner"></div><div class="btn-cart">В корзину</div>
+          </div>
+
+          <div class="item">
+              <img src="images/sample/item.png">
+              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+              <div class="retail">розница <b>1343</b> руб.</div>
+              <div class="online">интернет <b>1150</b> руб.</div>
+
+              <div class="spinner"></div><div class="btn-cart">В корзину</div>
+          </div>
+
+
+
+    </div>
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
