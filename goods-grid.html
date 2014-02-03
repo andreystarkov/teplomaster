@@ -69,36 +69,6 @@
 
     </div>
 
-    <style>
-      .box-icons .col-xs-2 {
-        text-align: center;
-      }
-      .accordion {
-   margin: 5px;
-   dt, dd {
-      padding: 10px;
-      border: 1px solid black;
-      border-bottom: 0;
-      &:last-of-type {
-        border-bottom: 1px solid black;
-      }
-      a {
-        display: block;
-        color: black;
-        font-weight: bold;
-      }
-   }
-  dd {
-     border-top: 0;
-     font-size: 12px;
-     &:last-of-type {
-       border-top: 1px solid white;
-       position: relative;
-       top: -1px;
-     }
-  }
-}
-    </style>
 
     <div class="container">
 
@@ -120,30 +90,30 @@
                     <div class="tab-content">
                       <div class="tab-pane active" id="home">
 
-                          <dl class="accordion">
+                          <dl cass="accordion">
 
-                              <dt><a href="">Фильтры для воды и отопления</a></dt>
-                              <dd>
-                                  <a href="#">Умягчители</a><br>
-                                  <a href="#">Фильтры для получения питьевой воды </a><br>
-                                  <a href="#">Картриджи</a><br>
+                              <dt class="wn-1"><a href=""><i class="fa fa-angle-down"></i>Фильтры для воды и отопления</a></dt>
+                              <dd class="wn-1">
+                                  <a href="#">Умягчители</a>
+                                  <a href="#">Фильтры для получения питьевой воды</a>
+                                  <a href="#">Картриджи</a>
+                                  <a href="#">Фльтры для воды и отопления</a>
+                              </dd>
+
+                              <dt class="wn-2"><a href=""><i class="fa fa-angle-down"></i>Краны шаровые, вентили, запорная арматура</a></dt>
+                              <dd class="wn-2">
+                                  <a href="#">Умягчители</a>
+                                  <a href="#">Фильтры для получения питьевой воды </a>
+                                  <a href="#">Картриджи</a>
                                   <a href="#">Фильтры для воды и отопления</a>
                               </dd>
 
-                              <dt><a href="">Краны шаровые, вентили, запорная арматура</a></dt>
-                              <dd>
-                                  <a href="#">Умягчители</a><br>
-                                  <a href="#">Фильтры для получения питьевой воды </a><br>
-                                  <a href="#">Картриджи</a><br>
-                                  <a href="#">Фильтры для воды и отопления</a>
-                              </dd>
 
-
-                              <dt><a href="">Стабилизаторы и источники бесперебойного питания</a></dt>
-                              <dd>
-                                  <a href="#">Умягчители</a><br>
-                                  <a href="#">Фильтры для получения питьевой воды </a><br>
-                                  <a href="#">Картриджи</a><br>
+                              <dt class="wn-3"><a href=""><i class="fa fa-angle-down"></i>Стабилизаторы и источники бесперебойного питания</a></dt>
+                              <dd class="wn-3">
+                                  <a href="#">Умягчители</a>
+                                  <a href="#">Фильтры для получения питьевой воды </a>
+                                  <a href="#">Картриджи</a>
                                   <a href="#">Фильтры для воды и отопления</a>
                               </dd>
                           </dl>
@@ -154,11 +124,7 @@
                       <div class="tab-pane" id="settings">..4.</div>
                     </div>
 
-                    <script>
-                      $(function () {
-                        $('#myTab a:last').tab('show')
-                      })
-                    </script>
+
             </div>
 
             <div class="row box-icons">
@@ -262,6 +228,7 @@
 
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/transit.js"></script>
     <script src="js/main.js"></script>
     </body>
 </html>
