@@ -74,7 +74,7 @@
 
         <div class="box-header">
 
-            <div class="row">
+            <div class="row" style="margin-left:0">
                 <div class="btn-catalog">Каталог товаров<i class="fa fa-angle-down"></i></div>
                 <div class="box-search"><span>Найти товар</span><input type="text" name="search">
                 <div class="btn-search"><i class="fa fa-search"></i> Искать</div></div>
@@ -82,15 +82,15 @@
 
             <div class="popup-catalog">
                     <ul class="nav nav-tabs" id="myTab">
-                      <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-circle"></i> Тепломастер</a></li>
-                      <li><a href="#profile" data-toggle="tab"><i class="fa fa-circle"></i> РобоДом</a></li>
-                      <li><a href="#messages" data-toggle="tab"><i class="fa fa-circle"></i> МеталлДизайн</a></li>
+                      <li class="active"><a href="#category-1" data-toggle="tab"><i class="fa fa-circle"></i> Тепломастер</a></li>
+                      <li><a href="#category-2" data-toggle="tab"><i class="fa fa-circle"></i> РобоДом</a></li>
+                      <li><a href="#category-3" data-toggle="tab"><i class="fa fa-circle"></i> МеталлДизайн</a></li>
                     </ul>
 
                     <div class="tab-content">
-                      <div class="tab-pane active" id="home">
+                      <div class="tab-pane active" id="category-1">
 
-                          <dl cass="accordion">
+                          <dl class="accordion">
 
                               <dt class="wn-1"><a href=""><i class="fa fa-angle-down"></i>Фильтры для воды и отопления</a></dt>
                               <dd class="wn-1">
@@ -119,45 +119,86 @@
                           </dl>
 
                       </div>
-                      <div class="tab-pane" id="profile">...2</div>
-                      <div class="tab-pane" id="messages">..3.</div>
-                      <div class="tab-pane" id="settings">..4.</div>
+
+                      <div class="tab-pane" id="category-2">
+                              <dl class="accordion">
+
+                                  <dt class="wn-1"><a href=""><i class="fa fa-angle-down"></i>Фильтры для воды и отопления</a></dt>
+                                  <dd class="wn-1">
+                                      <a href="#">Умягчители</a>
+                                      <a href="#">Фильтры для получения питьевой воды</a>
+                                      <a href="#">Картриджи</a>
+                                      <a href="#">Фльтры для воды и отопления</a>
+                                  </dd>
+
+                                  <dt class="wn-2"><a href=""><i class="fa fa-angle-down"></i>Краны шаровые, вентили, запорная арматура</a></dt>
+                                  <dd class="wn-2">
+                                      <a href="#">Умягчители</a>
+                                      <a href="#">Фильтры для получения питьевой воды </a>
+                                      <a href="#">Картриджи</a>
+                                      <a href="#">Фильтры для воды и отопления</a>
+                                  </dd>
+
+                               </dl>
+                      </div>
+                      <div class="tab-pane" id="category-3">
+                              <dl class="accordion">
+
+                                  <dt class="wn-1"><a href=""><i class="fa fa-angle-down"></i>Фильтры для воды и отопления</a></dt>
+                                  <dd class="wn-1">
+                                      <a href="#">Умягчители</a>
+                                      <a href="#">Фильтры для получения питьевой воды</a>
+                                      <a href="#">Картриджи</a>
+                                      <a href="#">Фльтры для воды и отопления</a>
+                                  </dd>
+
+                                  <dt class="wn-2"><a href=""><i class="fa fa-angle-down"></i>Краны шаровые, вентили, запорная арматура</a></dt>
+                                  <dd class="wn-2">
+                                      <a href="#">Умягчители</a>
+                                      <a href="#">Фильтры для получения питьевой воды </a>
+                                      <a href="#">Картриджи</a>
+                                      <a href="#">Фильтры для воды и отопления</a>
+                                  </dd>
+
+                               </dl>
+                      </div>
+
                     </div>
 
 
             </div>
 
-            <div class="row box-icons">
+            <div class="box-icons">
 
-                  <div class="col-xs-2">
+                  <div class="item">
                     <a href="#">
                       <img src="images/icons/1.png">
                       <b>Покупка в кредит</b>
                     </a>
                   </div>
 
-                  <div class="col-xs-2">
+                  <div class="item">
                     <a href="#">
                       <img src="images/icons/2.png">
                       <b>Доставка по регионам России</b>
                     </a>
                   </div>
 
-                  <div class="col-xs-2">
+                  <div class="item">
                     <a href="#">
                       <img src="images/icons/3.png">
                       <b>Гарантийное обслуживание</b>
                     </a>
                   </div>
 
-                  <div class="col-xs-2">
+                  <div class="item">
                     <a href="#">
                       <img src="images/icons/4.png">
                       <b>Установка и подключение техники</b>
                     </a>
                   </div>
 
-                  <div class="col-xs-2">
+                  <div class="item">
                     <a href="#">
                       <img src="images/icons/5.png">
                       <b>Дисконтная программа</b>
@@ -171,61 +212,145 @@
     </div>
 
     <div class="container catalog-grid">
+        <div class="line">
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
 
-          <div class="item">
-              <img src="images/sample/item.png">
-              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
 
-              <div class="retail">розница <b>1343</b> руб.</div>
-              <div class="online">интернет <b>1150</b> руб.</div>
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
 
-              <div class="spinner"></div><div class="btn-cart">В корзину</div>
-          </div>
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
 
-          <div class="item">
-              <img src="images/sample/item.png">
-              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
 
-              <div class="retail">розница <b>1343</b> руб.</div>
-              <div class="online">интернет <b>1150</b> руб.</div>
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
 
-              <div class="spinner"></div><div class="btn-cart">В корзину</div>
-          </div>
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
 
-          <div class="item">
-              <img src="images/sample/item.png">
-              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
 
-              <div class="retail">розница <b>1343</b> руб.</div>
-              <div class="online">интернет <b>1150</b> руб.</div>
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
 
-              <div class="spinner"></div><div class="btn-cart">В корзину</div>
-          </div>
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
 
-          <div class="item">
-              <img src="images/sample/item.png">
-              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
 
-              <div class="retail">розница <b>1343</b> руб.</div>
-              <div class="online">интернет <b>1150</b> руб.</div>
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
 
-              <div class="spinner"></div><div class="btn-cart">В корзину</div>
-          </div>
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
 
-          <div class="item">
-              <img src="images/sample/item.png">
-              <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
 
-              <div class="retail">розница <b>1343</b> руб.</div>
-              <div class="online">интернет <b>1150</b> руб.</div>
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
+        </div>
 
-              <div class="spinner"></div><div class="btn-cart">В корзину</div>
-          </div>
+        <div class="line">
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
 
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
 
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
 
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
+
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
+
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
+
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
+
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
+
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
+
+              <div class="item">
+                  <img src="images/sample/item.png">
+                  <span>Элемент нагревательный 1,2 кВт 22 65103765 (Аристон)</span>
+
+                  <div class="retail">розница <b>1343</b> руб.</div>
+                  <div class="online">интернет <b>1150</b> руб.</div>
+
+                  <div class="spinner"></div><div class="btn-cart">В корзину</div>
+              </div>
+        </div>
     </div>
 
+      <div class="container" style="padding: 0; margin-top: 50px;">
+        <div class="footer">
+            <ul>
+                <li><b>Тепломастер</b></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Для тех, кто строит дом</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Интрнет-магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul>
+                <li><b>Тепломастер</b></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Для тех, кто строит дом</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Интрнет-магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+             <div class="phone">
+                  <span>Единая справочная служба:</span>
+                  <i>(3532) 62-10-10</i>
+              </div>
+        </div>
+       </div>
+
+    </div> <!-- /container -->
     <script src="js/vendor/jquery-1.10.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/transit.js"></script>

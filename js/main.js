@@ -1,6 +1,11 @@
 
+
+
     $(function () {
 
+    function isInt(n) {
+      return !isNaN(parseFloat(n)) && isFinite(n);
+    }
 
       $('.carousel').carousel({
             interval: 7000
@@ -25,6 +30,26 @@
 
       $('.spinner').each(function(){
         $(this).html('<i class="fa fa-caret-left left"></i><input type="text" name="count"><div class="right"></div><i class="fa fa-caret-right right"></i>');
+      });
+
+      $('.catalog-grid .item input').each(function(){
+        $(this).val('1');
+      });
+      $('.spinner').hover(function(){
+        $('i', this).fadeTo(1, 500);
+      }, function(){
+        $('i', this).fadeTo(0.3, 500);
+      });
+
+      $('.spinner i').click(function(){
+        var obj = $(this).parent();
+        var val = $('input', obj).val();
+        if(isInt(val)){
+            if($(this).hasClass('left')) val--;
+            if($(this).hasClass('right')) val++;
+            $('input', obj).val(val);
+        }
+
       });
 
       $('.accordion > dd a').each(function(i, ai){
