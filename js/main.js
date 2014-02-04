@@ -1,5 +1,5 @@
 
-
+    /* im@andreystarkov.ru */
 
     $(function () {
 
