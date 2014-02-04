@@ -39,10 +39,11 @@
 
       $('.popup-catalog').mouseenter(function(){ isOver = true; });
 
+
       $('.accordion > dt').each(function(i){ i++; $(this).addClass('wn-'+i); });
       $('.accordion > dd').each(function(i){ i++; $(this).addClass('wn-'+i); });
       $('.accordion > dd').each(function(i){ i++; $(this).addClass('wn-'+i); });
-      $('.catalog-grid .item input').each(function(){ $(this).val('1'); });
+      $('.spinner input').each(function(){ $(this).val('1'); });
 
       $('.accordion > dd a').each(function(i, ai){
         i++; a1 = $(this).html();

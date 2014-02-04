@@ -26,6 +26,7 @@
     }
 
     body {
+        h1,h2,h3,p { font-family: 'Open Sans'; }
         font-family: 'Open Sans';
         background: url(../images/bg.jpg) top center no-repeat;
         padding-bottom: 100px;
@@ -301,7 +302,7 @@
 
                     border-bottom: 0;
 
-                    a:last-child { border-bottom: 0 !important; }
+                    a:last-child { border: 0 !important; }
 
                     a {
                         display: block;
@@ -364,6 +365,18 @@
                 }
             }
 
+        }
+
+        .breadcrumb {
+            margin-top: 10px;
+
+            a {
+                margin-right: 5px;
+                margin-left: 5px;
+                font-size: 16px;
+                color: #666;
+                text-decoration: underline;
+            }
         }
 
         .box-icons {
@@ -504,6 +517,218 @@
         .btn-catalog:hover {
             background: #e3445e;
         }
+    }
+
+    .catalog-detail {
+        width: 100%;
+        min-height: 450px;
+        padding: 10px;
+        h1 {
+            margin-top:0;
+            padding-top:0;
+            font-weight: 600;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        i { font-style: normal; }
+
+        .image {
+
+            position: relative;
+            float: left;
+            width: 360px;
+            min-height: 360px;
+            vertical-align:middle;
+            img {
+                vertical-align:middle;
+            }
+
+            border: 1px solid #ccc;
+            margin-right: 30px;
+
+            .articul { position: absolute;
+                left: 0px; bottom: -40px; }
+        }
+        .info {
+            float: left;
+            zoom: 1;
+            width: 670px;
+            overflow: hidden;
+            .cost {
+                 zoom: 1;
+                 overflow: hidden;
+                .online {
+                    float: left;
+                    position: relative;
+                    width: 250px;
+                    padding: 10px 15px 10px 15px;
+                    background: fade(@color-red, 50%);
+                    font-size: 18px;
+                    i {
+                        display: block;
+                        font-weight: 600;
+
+                    }
+                    span {
+                       color: fade(#000, 80%);
+                       font-size: 35px;
+                       font-weight: 600;
+                    }
+                    margin-right: 20px;
+                }
+                .retail {
+                    float: left;
+                    position: relative;
+                    width: 250px;
+                    padding: 10px 15px 10px 15px;
+                    // background: fade(#000, 10%);
+                    font-size: 18px;
+                    i {
+                        display: block;
+                        font-weight: 600;
+
+                    }
+                }
+                span {
+                   color: fade(#000, 80%);
+                   font-size: 35px;
+                   font-weight: 600;
+                }
+            }
+
+           .count {
+                position: relative;
+                margin-top: 20px;
+                height: 50px;
+
+                b {
+                    float: left;
+                    display: block;
+                    color: fade(#000, 60%);
+                    padding-top: 12px;
+                    font-weight: 500;
+                    margin-left: 20px;
+                    font-size: 16px;
+                }
+                .spinner {
+                    position: relative;
+                    width: 250px;
+                    float: left;
+                    vertical-align: middle;
+
+                    .fa {
+                        opacity: 0.4;
+                        transition: 0.3s ease all;
+                        cursor: pointer;
+                        padding: 10px 15px 10px 15px;
+                        position: absolute;
+                        height: 45px;
+                        width: 45px;
+                        text-align: center;
+                        font-size: 25px;
+                        color: rgba(0,0,0,0.5);
+                    }
+
+                    .fa:hover {
+                        color: #000;
+                    }
+
+                    .left {
+                        border-right: 1px solid rgba(0,0,0,0.1);
+                        left: 0; top: 0;
+                    }
+                    .right {
+                        border-left: 1px solid rgba(0,0,0,0.1);
+                        right: 0; top: 0;
+                    }
+                    input {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align:center;
+                        border: 1px solid rgba(0,0,0,0.15);
+                        height: 45px;
+                    }
+                }
+            }
+            .choose {
+                width:500px;
+                height: 137px;
+                b { display: block; margin-bottom: 10px; }
+                margin-top: 10px;
+                .point {
+                    width: 250px;
+                    height: 45px;
+                    float: left;
+                    input {
+                        width: 32px;
+                        height: 32px;
+                        float: left;
+                        transition: 0.5s ease-in all;
+                        cursor: pointer;
+                    }
+
+                    label {
+                            float: left;
+                            line-height: 1;
+                            font-size: 16px;
+                            font-weight: 500;
+                            padding: 12px 15px 0px 15px;
+
+                    }
+                    input:checked::before,
+                    input[type="checkbox"] {
+                        position:absolute;
+                        clip: rect(0,0,0,0);
+                        clip: rect(0 0 0 0);
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    input:checked,
+                    input[type="checkbox"] + label::before {
+                        content: url('../images/checked.png');
+
+                    }
+
+                    input[type="checkbox"]:checked + label::before {
+                        content: url('../images/checked.png');
+                    }
+                }
+            }
+
+             .btn-cart {
+                position: relative;
+                background: #5698c9;
+                font-size: 19px;
+                width: 240px;
+                text-align:center;
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+                padding: 10px;
+                transition: 0.4s ease-in-out all;
+            }
+
+            .btn-cart:hover {
+                background: #72b3e3;
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.4)
+            }
+
+        }
+
+        .description {
+            h2 { marin-top: 20px; font-size: 26px; margin-bottom: 20px; }
+            p { text-indent: 15px; line-height: 1.6; font-size: 16px; }
+            min-height: 200px;
+            position: relative;
+            float: left;
+            display: block;
+            margin-top: 30px;
+            width: 100%;
+        }
+
     }
 
     .catalog-grid {
@@ -770,6 +995,7 @@
         }
     }
 
+    #detail { padding: 15px; margin-top: 10px; background: #fff; }
     #good-block-1 {
         .carousel-caption {
             background: fade(@color-blue,85%);
