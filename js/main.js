@@ -33,8 +33,12 @@
         if(isInt(val)){
             if($(this).hasClass('left')) val--;
             if($(this).hasClass('right')) val++;
-            $('input', obj).val(val);
+            if(val >= 1) $('input', obj).val(val);
         }
+      });
+
+      $('.item img').click(function(){
+        window.location.href = "catalog-detail.html";
       });
 
       $('.popup-catalog').mouseenter(function(){ isOver = true; });
