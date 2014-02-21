@@ -1,0 +1,234 @@
+
+    // Три слайдера на главной
+
+    .three-sliders {
+
+        .row {
+
+            text-align: center;
+            width: 1170px;
+            margin-left: 0;
+            margin-right: 0;
+
+            .right {
+                right: 4px;
+            }
+
+            .carousel-control {
+                width: 60px;
+                height: 60px;
+                background: rgba(0,0,0,0.4);
+                top: 209px;
+
+                .fa {
+                    margin-top:4px;
+                    text-align: center;
+
+                    font-size: 45px;
+                    padding: 0px;
+                    display: block;
+
+                }
+
+            }
+
+            .col-xs-4 {
+
+                padding-left: 0;
+                width: 385px;
+                padding-right:0;
+                margin-right: 7px;
+
+               .good-block {
+                    height: 382px;
+                    width: 384px;
+
+                    b {
+                        text-align: left;
+                        line-height: 1.2;
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+
+                    .carousel-caption {
+                        position: absolute;
+                        bottom: 0; left: 0;
+                        height: 120px;
+                        width: 100%;
+                        padding: 10px 15px;
+                        // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+                    }
+
+                    .btn-go {
+                        background: rgba(51,51,51,0.75);
+                        display:block;
+                        position: absolute;
+                        font-size: 14px;
+                        padding: 5px 14px;
+                        right: 15px;
+                        color: #fff;
+                        border-radius: 3px;
+                        bottom: 10px;
+                    }
+
+                    .btn-go:hover {
+                       background: rgba(51,51,51,1);
+                       text-decoration: none;
+                    }
+
+                    .total {
+                        position: absolute;
+                        bottom: 15px;
+                        left: 15px;
+                        padding-left: 30px;
+                        background: url(../images/basket.png) left center no-repeat;
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+
+                }
+
+            }
+
+            .col-xs-4:last-child {
+                margin-right: 0;
+                margin-left: 1px;
+            }
+
+            ul {
+
+                .col-xs-2:first-child {
+                    padding-left: 0px;
+                }
+
+            }
+        }
+    }
+
+    // Блок новостей
+
+    .news {
+
+        position: relative;
+
+        h3 {
+            display: block; position: absolute;
+            margin:0; top: -30px; left: 0px;
+            font-size: 18px; text-transform: uppercase;
+        }
+
+        .item {
+            margin-top: 10px;
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 110px;
+
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+
+            div {
+                position: absolute;
+                width: 440px;
+                height: 110px;
+                right: 20px;
+                top: 0;
+                background: rgba(255,255,255,0.9);
+                border: 1px solid #ccc;
+                display: block;
+                padding: 10px;
+
+                p {
+                    color: #333;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                i { font-style: normal;
+                    color: #b8b8b8;
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+
+    // Блок с информацией
+
+    .info-block {
+        margin-top: 10px;
+        padding: 20px;
+        height: 230px;
+        width: 100%;
+        background: fade(@color-blue, 80%);
+        border-radius: 0;
+        color: #fff;
+        position: relative;
+
+        .phone {
+            position: absolute; top: 65px; right: 15px; width: 55%; height: 70px;
+            padding-left: 80px; background: url(../images/phone.png) left center no-repeat;
+
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            i {
+                font-style: normal;
+                font-size: 32px;
+            }
+        }
+
+        b { font-weight: 600px; margin-bottom: 15px; display: block; text-align: left; }
+        p { font-weight: 500px; text-align: left; }
+
+        .links {
+            position: absolute; right: 20px; bottom: 20px; width: 70%;
+            text-align: right;
+        }
+
+        .links a { color: #fff; margin-left: 15px; }
+    }
+
+    .adv-sliders {
+        .carousel-control {
+            display: none !important;
+        }
+    }
+    .adv-block {
+        .nivo-controlNav { display: none; }
+
+        .carousel-indicators {
+            bottom: 20px; right: 30px;
+        }
+    }
+
+   #detail { padding: 15px; margin-top: 10px; background: #fff; }
+
+    #good-block-1 {
+        .carousel-caption {
+            background: fade(@color-blue,85%);
+        }
+    }
+
+    #good-block-2 {
+        .carousel-caption {
+            background: fade(@color-green,85%);
+        }
+    }
+
+    #good-block-3 {
+        .carousel-caption {
+            background: fade(@color-orange,85%);
+        }
+    }
+
+    #middle-block { margin-top: 50px; width: 1170px; }

@@ -1,0 +1,55 @@
+
+    .footer {
+        height:345px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 30px;
+        background: #e5e5e5;
+        position: relative;
+
+        .phone {
+            position: absolute;
+            top: 45px;
+            right: 100px;
+            height: 70px;
+
+            span {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            i {
+                font-style: normal;
+                font-size: 28px;
+            }
+        }
+
+        ul {
+            display: block;
+            float: left;
+            width: 25%;
+            list-style: none;
+            padding-left: 10px;
+            li:first-child {
+                margin-bottom: 10px;
+            }
+
+            li {
+                margin-bottom: 4px;
+                b {
+                    font-size: @font-size-text;
+                    margin-bottom: 10px;
+                }
+                a {
+                    color: #333333;
+                    text-decoration: none;
+                    font-size: @font-size-text;
+                }
+                a:hover {
+                text-decoration: underline
+                 }
+            }
+
+        }
+    }

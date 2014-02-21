@@ -1,7 +1,17 @@
 
     /* im@andreystarkov.ru */
 
+    function itemMultiple($box, howMuch){
+          var items = $box.html();
+          for(var i = 1; i < howMuch; i++){
+
+            $box.append(items);
+          }
+    }
+
     $(function () {
+
+    itemMultiple($('.catalog-grid'), 4);
 
     function isInt(n) {
       return !isNaN(parseFloat(n)) && isFinite(n);
@@ -10,6 +20,8 @@
       $('.carousel').carousel({
             interval: 7000
        })
+
+      $('.point input:radio').screwDefaultButtons({ image: 'url("images/radio-sprite.png")', width: 32, height: 33});
 
       $('#myTab a:last').tab('show');
 
@@ -24,7 +36,7 @@
       $('.spinner').hover(function(){
         $('i', this).fadeTo(1, 500);
       }, function(){
-        $('i', this).fadeTo(0.3, 300);
+        $('i', this).fadeTo(0.5, 300);
       });
 
       $('.catalog-grid .item').hover(function(){
@@ -49,7 +61,11 @@
 
       $('.popup-catalog').mouseenter(function(){ isOver = true; });
 
+      $('.catalog-grid .line .item b').each(function(){
+        $(this).append('<i>&#8399;</i>');
+      });
 
+      $('.accordion > dt').each(function(i){ i++; $(this).addClass('wn-'+i); });
       $('.accordion > dt').each(function(i){ i++; $(this).addClass('wn-'+i); });
       $('.accordion > dd').each(function(i){ i++; $(this).addClass('wn-'+i); });
       $('.accordion > dd').each(function(i){ i++; $(this).addClass('wn-'+i); });
