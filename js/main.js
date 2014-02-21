@@ -9,13 +9,14 @@
           }
     }
 
-    $(function () {
+    $(function(){
 
-    itemMultiple($('.catalog-grid'), 4);
+      itemMultiple($('.catalog-grid'), 4);
+      itemMultiple($('.news-list'), 4);
 
-    function isInt(n) {
-      return !isNaN(parseFloat(n)) && isFinite(n);
-    }
+      function isInt(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+      }
 
       $('.carousel').carousel({
             interval: 7000
@@ -46,12 +47,32 @@
       });
 
       $('.spinner i').click(function(){
+
+
         var obj = $(this).parent();
         var val = $('input', obj).val();
+
+
+
         if(isInt(val)){
             if($(this).hasClass('left')) val--;
             if($(this).hasClass('right')) val++;
             if(val >= 1) $('input', obj).val(val);
+            if ($(this).parent().hasClass('basket-count')){
+              var parent = $(this).parent().parent().parent();
+              var cost = $('.cost', parent).html();
+              var result = parseFloat(cost) * parseFloat(val);
+
+              console.log(cost + ' * ' + val + ' = ' + result);
+              $('.total', parent).html(result);
+
+            }
+              var total = 0;
+               $('.total').each(function(){
+                total = total + parseFloat($(this).html());
+              });
+
+               $('.mega-total b').html(total);
         }
       });
 
@@ -63,6 +84,16 @@
 
       $('.catalog-grid .line .item b').each(function(){
         $(this).append('<i>&#8399;</i>');
+      });
+
+      $('.portfolio-item').each(function(){
+        $(this).append('<i class="fa fa-search"></i>');
+      });
+
+      $('.portfolio-item').hover(function(){
+        $('i', this).transition({opacity: 1});
+      }, function(){
+        $('i', this).transition({opacity: 0});
       });
 
       $('.accordion > dt').each(function(i){ i++; $(this).addClass('wn-'+i); });

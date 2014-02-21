@@ -15,21 +15,32 @@
     @color-pink: #cb2b45;
     @color-green-block: rgba(138,189,14,0.8);
     @color-orange-block: rgba(230,120,23,0.8);
+
     @font-size-text: '14px';
 
     body {
-        h1,h2,h3,p { font-family: 'Open Sans'; }
+
+        h1,h2,h3,p {
+            font-family: 'Open Sans';
+
+        }
+
         font-family: 'Open Sans';
         background: url(../images/bg.jpg) top center no-repeat;
         padding-bottom: 30px;
+
         a {
             transition: 0.4s ease-in all;
         }
     }
 
+
     @import "common.less";
     @import "home.less";
+    @import "news.less";
     @import "catalog.less";
+    @import "basket.less";
+    @import "portfolio.less";
     @import "footer.less";
 
 

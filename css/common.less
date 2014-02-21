@@ -38,18 +38,26 @@
 
     .top-menu {
 
-        li {
-            a {
-                padding-top: 14px;
-            }
-        }
-        box-shadow: 0 0 0 rgba(0,0,0,0);
+        box-shadow: 0;
         height: 45px;
         width: 1170px;
         border-radius: 0px;
+
+        li {
+            a {
+                padding-top: 14px;
+                color: #222;
+                font-size:@font-size-text;
+                font-weight:500;
+            }
+
+            &:first-child {
+                a { padding-left: 20px; }
+            }
+        }
+
         .basket:hover {
             background: url(../images/basket-big.png) 10px center no-repeat, rgba(255,255,255,0.3);
-
         }
 
         .basket {
@@ -72,12 +80,67 @@
                 height: 50px; }
         }
 
+
+    }
+
+    // Текущий путь
+
+    .breadcrumb {
+        margin-top: 10px;
+        background: rgba(0,0,0,0) !important;
         a {
-            color: #222;
-            font-size:@font-size-text;
-            font-weight:500;
+            margin-right: 5px;
+            margin-left: 5px;
+            font-size: @font-size-text;
+            color: #666;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: @color-pink;
+        }
+     }
+
+     // контент
+
+    .content {
+        padding-left: 20px;
+        paddin-right: 20px;
+        padding-bottom: 40px;
+
+    }
+    .step-bottom {
+        margin-bottom: 20px !important;
+    }
+
+    .page-container {
+
+        color: #333333;
+
+        h3 { font-size: 13.5pt; font-weight: 600; color: #4b4b4b; }
+
+        background: #fff;
+
+        .image {
+            img { margin-bottom: 10px;}
+            p { font-size: 16px; }
+            margin-bottom: 40px;
         }
 
+        .list-light {
+            margin-left: 0;
+            padding-left: 0;
+            .head { font-weight: 700; margin-left: 0px; }
+
+            li {
+                padding-right: 20px;
+                margin-left: 40px;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+            list-style-type: none;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
     }
 
     // Other common stuff
@@ -122,3 +185,46 @@
         a.active { background: fade(@color-blue,50%); }
         .active>a { background: fade(@color-blue,50%); }
     }
+
+    .point {
+    width: 250px;
+    height: 45px;
+    float: left;
+    .styledRadio {
+        float: left;
+    //    transition: 0.2s ease-in-out all;
+    }
+    input {
+        width: 32px;
+        height: 32px;
+        float: left;
+        transition: 0.5s ease-in all;
+        cursor: pointer;
+    }
+
+    label {
+            float: left;
+            line-height: 1;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 15px 12px 15px;
+
+    }
+    input:checked::before,
+    input[type="checkbox"] {
+        position:absolute;
+        background: #fff;
+        width: 35px;
+        height: 35px;
+    }
+
+    input:checked,
+    input[type="checkbox"] + label::before {
+        content: url('../images/checked.png');
+
+    }
+
+    input[type="checkbox"]:checked + label::before {
+        content: url('../images/checked.png');
+    }
+}
