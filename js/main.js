@@ -16,7 +16,7 @@
       var allPanels = $('.accordion > dd').hide();
       var timer;
       var isOver;
-
+      $('.box-search').append('<div class="field-corner"></div>');
       $('.spinner').each(function(){
         $(this).html('<i class="fa fa-caret-left left"></i><input type="text" name="count"><div class="right"></div><i class="fa fa-caret-right right"></i>');
       });
@@ -24,7 +24,13 @@
       $('.spinner').hover(function(){
         $('i', this).fadeTo(1, 500);
       }, function(){
-        $('i', this).fadeTo(0.3, 500);
+        $('i', this).fadeTo(0.3, 300);
+      });
+
+      $('.catalog-grid .item').hover(function(){
+        $(this).transition({boxShadow: '0 0 8px rgba(86,152,201,0.8)', backgroundColor: 'rgba(255,255,255,1)'});
+      }, function(){
+        $(this).transition({boxShadow: '0 0 0 rgba(86,152,201,0)', backgroundColor: 'rgba(255,255,255,0.9)'});
       });
 
       $('.spinner i').click(function(){
@@ -49,16 +55,16 @@
       $('.accordion > dd').each(function(i){ i++; $(this).addClass('wn-'+i); });
       $('.spinner input').each(function(){ $(this).val('1'); });
 
-      $('.accordion > dd a').each(function(i, ai){
-        i++; a1 = $(this).html();
-        $(this).html('<i class="fa fa-angle-double-right"></i> '+a1);
-        $(this).addClass('wn-'+i);
-     });
-
       $('.btn-catalog').click( function(){
                 $(this).addClass('active');
                 $('.popup-catalog').fadeToggle();
        });
+
+      $('.accordion > dd a').each(function(i, ai){
+        i++; a1 = $(this).html();
+        // $(this).html('<i class="fa fa-angle-double-right"></i> '+a1);
+        $(this).addClass('wn-'+i);
+     });
 
       $('.popup-catalog').mouseleave(function(){
           var _this = $(this);
@@ -80,21 +86,17 @@
                 $(this).addClass('parent');
             });
 
-            $('.accordion > dt > a i').each(function(){
-              $(this).transition({rotate:'0deg', background: 'rgba(0,0,0,0)'});
-            }, {queue: false, duration: 100});
+           // $('.accordion > dt > a i').each(function(){
+           // }, {queue: false, duration: 100});
 
             $('.accordion > dt > a.active').removeClass('active');
 
-            $('i', this).transition({rotate:'-90deg', background: 'rgba(0,0,0,0.1)'});
             $(this).addClass('active');
 
             allPanels.slideUp();
             $(this).parent().next().slideDown();
             return false;
         } else { }
-
-
 
       });
 
