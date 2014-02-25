@@ -43,18 +43,18 @@
             <div class="logo-metal"></div>
         </div>
 
-        <div class="navbar top-menu color-blue">
+        <div class="navbar top-menu color-green">
             <div class="container">
 
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="#">О компании</a></li>
                     <li><a href="#">Услуги</a></li>
-                    <li class="active"><a href="#">Новости</a></li>
+                    <li><a href="#">Новости</a></li>
                     <li><a href="#">Партнеры</a></li>
                     <li><a href="#">Полезная информация</a></li>
                     <li><a href="#">Контакты</a></li>
-                    <li><a href="catalog.html">Интернет магазин</a></li>
+                    <li class="active"><a href="catalog.html">Интернет магазин</a></li>
 
                     <div class="basket navbar-right">
                         <b>Корзина</b>
@@ -73,53 +73,87 @@
       <a href="#">Главная</a> / <a href="#">Тепломастер</a> / <a href="#">Интернет-магазин</a> / <a href="#">Покупка в кредит</a>
     </div>
 
-    <div class="container page-container content">
-        <h3 class="step-bottom">Новости</h3>
+    <div class="container content page-container basket-container order-complete">
 
-        <div class="news-list">
-            <div class="item">
-              <div class="thumb">
-                <img src="images/sample/thumb.jpg">
-                <div class="date">20.02.2014</div>
-              </div>
-              <div class="text">
-                  <h3>Поступление нового товара &mdash; бронетранспортеров Lazar II</h3>
-                  <p>Сербия оказалась единственной страной, разрешившей пакистанским полицейским провести испытания бронетранспортеров подрывом и обстрелом. Контракт на поставку Пакистану бронетранспортеров Lazar II уже подписан; сумма сделки составила 1,24 миллиарда пакистанских рупий (11,8 миллиона долларов). </p>
-                  <a href="#">Подробнее</a>
-              </div>
-           </div>
-        </div>
+    <h3>Моя корзина</h3>
 
-        <div class="pagination row">
-          <div class="col-xs-1">
-            <a href="#">Назад</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">9</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">10</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#" class="active">11</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">12</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">13</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">14</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">15</a>
-          </div>
-          <div class="col-xs-1">
-            <a href="#">Вперед</a>
-          </div>
-        </div>
+    <div class="top-links">
+      <a href="#">Вернуться к покупкам</a>
+      <a href="#">Очистить корзину</a>
+      <a href="#">Печать заказа</a>
     </div>
+
+    <div class="order-list">
+      <table class="table">
+        <tr>
+            <th>Артикул</th>
+            <th>Наименование</th>
+            <th>Цена, руб.</th>
+            <th>Количество</th>
+            <th>Всего, руб.</th>
+            <th>Пункт выдачи</th>
+            <th></th>
+        </tr>
+
+        <tr>
+          <td>65103765</td>
+          <td width="370">Элемент нагревательный 1,2 кВт 2265103765 (Аристон)</td>
+          <td class="cost">682.50</td>
+
+          <td>
+            1
+          </td>
+
+          <td class="total">682.50</td>
+
+          <td>
+              Беляевское шоссе 10
+          </td>
+
+          <td><div class="delete"></div></td>
+        </tr>
+
+        <tr>
+          <td>65103765</td>
+          <td width="370">Элемент нагревательный 1,2 кВт 2265103765 (Аристон)</td>
+          <td class="cost">682.50</td>
+
+          <td class="count">
+                2
+          </td>
+
+          <td class="total">682.50</td>
+
+          <td>
+            Монтажников 26
+          </td>
+
+          <td><div class="delete"></div></td>
+        </tr>
+
+      </table>
+
+      <div class="mega-total">Итого: <b>1365</b> рублей</div>
+    </div>
+
+      <table class="info-total">
+        <tr><td>Имя</td><td>Василий</td></tr>
+        <tr><td>Фамилия</td><td>Васильев</td></tr>
+        <tr><td>Контактный E-Mail</td><td>vasya@mail.ru</td></tr>
+        <tr><td>Телефон</td><td>8912354487</td></tr>
+        <tr><td>Номер дисконтной карты</td><td>6668886644</td></tr>
+        <tr><td>Адрес доставки</td><td>г.Оренбург, ул.М.Горького 22</td></tr>
+        <tr><td>Комментарии</td><td>Подтвердите, пожалуйста, заказ!</td></tr>
+      </table>
+
+
+    <h3 style="margin-bottom:5px">Оплата</h3>
+    <p style="font-size:12px">Оплатить в магазине</p>
+    <div class="btn-group step-top">
+      <a class="btn-order" href="#">Подтвердить</a><a class="btn-order btn-back inactive" href="#">Вернуться к редактированию заказа</a>
+    </div>
+    </div>
+
 
     <div class="container" style="padding: 0; margin-top: 50px;">
       <div class="footer">

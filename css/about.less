@@ -1,0 +1,115 @@
+    .form-message {
+        zoom: 1; overflow: hidden;
+        width: 800px;
+
+        .captcha {
+            position: relative;
+            width: 270px;
+            height: 90px;
+            margin-top: 45px;
+            margin-left: 200px;
+            b {
+                position: absolute;
+                top: 0; left: 0;
+                font-size: 10px;
+                span {
+                    color: red;
+                }
+            }
+            .pic {
+
+            }
+            img { position: absolute; left: 0; top:20px }
+            input[type=text] {
+                margin-top: 20px;
+                width: 120px;
+                height: 52px;
+                position: absolute;
+                right: 0;
+            }
+            a {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                margin-top: 40px;
+                font-size:10px;
+            }
+        }
+
+        input[type=text] { width: 600px; height: 32px; }
+        textarea { width: 600px; }
+        label, input { margin-top: 10px;}
+        label { width: 200px; }
+
+        label[for=message], textarea {
+            margin-top: 20px;
+            display: block;
+            float: left;
+            height: 150px;
+            margin-bottom: 15px;
+
+            .btn-upload {
+                margin-top: 10px;
+                background: url(../images/upload.png) left center no-repeat;
+                text-decoration: underline;
+                color: #333;
+                padding-top: 18px;
+                font-size: 13px;
+                padding-left: 40px;
+                font-weight: 500;
+            }
+
+            ul {
+                padding-left: 5px;
+                margin-top: 10px;
+                li {
+                    font-weight: 500;
+                    padding: 8px 10px 8px 20px;
+                    background: url(../images/x.png) left center no-repeat;
+
+                }
+                list-style: none;
+            }
+        }
+
+        input[type=submit] {
+            width: 220px;
+            float: right;
+        }
+    }
+
+
+    .page-about {
+        padding-left: 20px !important;
+        .about-box {
+            position: relative;
+            width: 170px;
+            height: 250px;
+            margin-right: 150px;
+            float: left;
+            padding: 0;
+
+            h3 { font-size: 12pt !important; margin-top: 0; padding-top: 0 }
+            p { font-size: 13px; }
+            b { position: relative; font-size: 14px;
+                text-align: left; width: 100%; display: block; height: 20px;
+                span { width: 100%; position: absolute; right: 0; text-align: right }
+            }
+
+            i { font-style: normal;
+                margin-top: 15px;
+                font-size: 18px; display: block;
+                margin-top: 10px; padding-left: 40px;
+                padding-bottom: 10px; font-weight: 600;
+                background: url(../images/phone-gray.png) left top no-repeat }
+
+            a { width: 100%; padding-top: 10px; padding-bottom: 10px; font-size: 16px;
+                margin-top:15px; background: #5698c9; color: #fff; display: block; text-align: center;
+                text-decoration: none;
+                &:hover {
+                    background: #73b2e1;
+                }
+            }
+
+        }
+    }

@@ -88,6 +88,7 @@
     .breadcrumb {
         margin-top: 10px;
         background: rgba(0,0,0,0) !important;
+        margin-bottom: 10px !important;
         a {
             margin-right: 5px;
             margin-left: 5px;
@@ -109,9 +110,11 @@
 
     }
     .step-bottom {
-        margin-bottom: 20px !important;
+        margin-bottom: 30px !important;
     }
-
+    .page-about {
+        padding: 0;
+    }
     .page-container {
 
         color: #333333;
@@ -184,6 +187,67 @@
         a:hover { background: fade(@color-blue,40%); }
         a.active { background: fade(@color-blue,50%); }
         .active>a { background: fade(@color-blue,50%); }
+    }
+    .step-top {
+        margin-top: 20px !important;
+    }
+
+    .btn-back {
+        float: left;
+        margin-left: 20px;
+        background: #9ec5e3;
+    }
+
+    .btn-group {
+        zoom: 1; overflow: hidden;
+        .btn-order {
+            float: left;
+
+        }
+        .btn-back { background: #9ec5e3 !important;
+            margin-left: 20px; width: 350px !important; }
+    }
+
+    .transparent {
+        background: transparent !important;
+    }
+
+
+    .pagination {
+        padding-top: 40px;
+        margin-top: 20px;
+        a {
+            padding: 10px 23px;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover {
+                background: #dadada;
+            }
+        }
+
+        a.active {
+
+            background: #565656;
+            color: white;
+        }
+    }
+
+    .btn-blue {
+        padding: 10px 40px 10px 40px;
+        font-size: 16px;
+        margin-top:15px;
+        background: #5698c9;
+        color: #fff;
+        display: block;
+        transition: 0.5s ease-in-out all;
+        text-align: center;
+        border: 0; outline: 0;
+        text-decoration: none;
+        &:hover {
+            background: #73b2e1;
+        }
     }
 
     .point {

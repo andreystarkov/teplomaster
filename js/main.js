@@ -29,20 +29,18 @@
       var allPanels = $('.accordion > dd').hide();
       var timer;
       var isOver;
+
       $('.box-search').append('<div class="field-corner"></div>');
       $('.spinner').each(function(){
         $(this).html('<i class="fa fa-caret-left left"></i><input type="text" name="count"><div class="right"></div><i class="fa fa-caret-right right"></i>');
       });
 
-      $('.spinner').hover(function(){
-        $('i', this).fadeTo(1, 500);
-      }, function(){
-        $('i', this).fadeTo(0.5, 300);
-      });
 
       $('.catalog-grid .item').hover(function(){
+        $(this).find('i').animate({opacity: 1});
         $(this).transition({boxShadow: '0 0 8px rgba(86,152,201,0.8)', backgroundColor: 'rgba(255,255,255,1)'});
       }, function(){
+         $(this).find('i').animate({opacity: 0.5});
         $(this).transition({boxShadow: '0 0 0 rgba(86,152,201,0)', backgroundColor: 'rgba(255,255,255,0.9)'});
       });
 
@@ -52,28 +50,27 @@
         var obj = $(this).parent();
         var val = $('input', obj).val();
 
-
-
         if(isInt(val)){
-            if($(this).hasClass('left')) val--;
-            if($(this).hasClass('right')) val++;
-            if(val >= 1) $('input', obj).val(val);
-            if ($(this).parent().hasClass('basket-count')){
+
+          if($(this).hasClass('left')) val--;
+          if($(this).hasClass('right')) val++;
+          if(val >= 1) $('input', obj).val(val);
+
+          if ($(this).parent().hasClass('basket-count')){
               var parent = $(this).parent().parent().parent();
               var cost = $('.cost', parent).html();
               var result = parseFloat(cost) * parseFloat(val);
-
               console.log(cost + ' * ' + val + ' = ' + result);
               $('.total', parent).html(result);
-
             }
+
               var total = 0;
                $('.total').each(function(){
                 total = total + parseFloat($(this).html());
               });
 
                $('.mega-total b').html(total);
-        }
+          }
       });
 
       $('.item img').click(function(){
