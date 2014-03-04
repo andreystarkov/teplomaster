@@ -26,7 +26,31 @@
 
     $(function(){
 
-      loadScript('js/init.js');
+      // init
+
+      $(".zebra tr:odd").addClass("odd");
+
+      $('.box-search').append('<div class="field-corner"></div>')
+
+      $('.carousel').carousel({ interval: 10000 })
+
+      $('.point input:radio').screwDefaultButtons({ image: 'url("images/radio-sprite.png")', width: 32, height: 33});
+
+      $('#tabs-catalog a:last').tab('show');
+
+      $('.spinner').each(function(){
+        $(this).html('<i class="fa fa-caret-left left"></i><input type="text" name="count"><div class="right"></div><i class="fa fa-caret-right right"></i>');
+      });
+
+      $('.spinner input').each(function(){ $(this).val('1'); });
+
+      $('.catalog-grid .line .item b').each(function(){ $(this).append('<i>&#8399;</i>'); });
+
+      $('.portfolio-item').each(function(){ $(this).append('<i class="fa fa-search"></i>'); });
+
+      $('.cart-container .btn-order').click(function(){
+          $('.form-order').fadeToggle();
+      });
 
       var timer, isOver;
 
@@ -45,7 +69,6 @@
       });
 
       $('.spinner i').click(function(){
-
         var obj = $(this).parent();
         var val = $('input', obj).val();
 
